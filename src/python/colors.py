@@ -20,7 +20,7 @@ BgColorName = Literal[
 ]
 
 script_path = Path(__file__).resolve()
-JSON_PATH = script_path.parent.parent / "colors.json"
+JSON_PATH = script_path.parent / "colors.json"
 
 with open(JSON_PATH, "r") as f:
     json_object = json.load(f)
